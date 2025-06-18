@@ -369,7 +369,7 @@ function ProductList() {
         {products.map(product => (
           <div key={product.id} style={{ border: '1px solid #ccc', padding: '1rem', borderRadius: '4px' }}>
             <h3>{product.name}</h3>
-            <p>${product.price}</p>
+            <p>{product.price}</p>
             <button onClick={() => addItem(product)}>
               Add to Cart
             </button>
@@ -404,14 +404,14 @@ function CartSummary() {
             <button onClick={() => updateQuantity(item.id, item.quantity - 1)}>-</button>
             <span>{item.quantity}</span>
             <button onClick={() => updateQuantity(item.id, item.quantity + 1)}>+</button>
-            <span>${(item.price * item.quantity).toFixed(2)}</span>
+            <span>\${(item.price * item.quantity).toFixed(2)}</span>
             <button onClick={() => removeItem(item.id)}>Remove</button>
           </div>
         </div>
       ))}
       
       <div style={{ marginTop: '1rem', fontSize: '1.2rem', fontWeight: 'bold' }}>
-        Total: ${getTotalPrice().toFixed(2)}
+        Total: \${getTotalPrice().toFixed(2)}
       </div>
       
       <button onClick={clearCart} style={{ marginTop: '1rem' }}>
