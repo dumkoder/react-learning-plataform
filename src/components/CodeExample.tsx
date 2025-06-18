@@ -28,7 +28,7 @@ export function CodeExample({ code, language = 'javascript', title, explanation 
       )}
       
       <div className="relative">
-        <pre className="overflow-x-auto p-4 bg-gray-900 text-gray-100">
+        <pre className="overflow-x-auto p-4 bg-muted text-foreground">
           <code className={`language-${language}`}>
             {code}
           </code>
@@ -36,13 +36,13 @@ export function CodeExample({ code, language = 'javascript', title, explanation 
         
         <button
           onClick={handleCopy}
-          className="absolute top-2 right-2 p-2 bg-gray-800 hover:bg-gray-700 rounded-md transition-colors"
+          className="absolute top-2 right-2 p-2 bg-background hover:bg-accent rounded-md transition-colors border border-border"
           title="Copy code"
         >
           {copied ? (
             <Check className="h-4 w-4 text-green-400" />
           ) : (
-            <Copy className="h-4 w-4 text-gray-400" />
+            <Copy className="h-4 w-4 text-muted-foreground" />
           )}
         </button>
       </div>

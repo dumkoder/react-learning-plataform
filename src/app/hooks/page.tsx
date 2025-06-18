@@ -57,10 +57,10 @@ export default function HooksPage() {
   return (
     <div className="max-w-4xl mx-auto">
       <div className="mb-8">
-        <h1 className="text-4xl font-bold text-gray-900 mb-4">
+        <h1 className="text-4xl font-bold text-foreground mb-4">
           React Hooks
         </h1>
-        <p className="text-xl text-gray-600">
+        <p className="text-xl text-muted-foreground">
           Master React Hooks to manage state and side effects in functional components.
         </p>
       </div>
@@ -86,20 +86,20 @@ export default function HooksPage() {
           <Link
             key={hook.id}
             href={`/hooks/${hook.id}`}
-            className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-all border border-gray-200 group"
+            className="bg-card p-6 rounded-lg shadow-md hover:shadow-lg transition-all border border-border group"
           >
             <div className="flex items-start justify-between">
               <div className="flex-1">
                 <div className="flex items-center mb-2">
                   <FileText className="h-5 w-5 text-blue-600 mr-2" />
-                  <h2 className="text-xl font-semibold text-gray-900 group-hover:text-blue-600 transition-colors">
+                  <h2 className="text-xl font-semibold text-card-foreground group-hover:text-blue-600 transition-colors">
                     {hook.title}
                   </h2>
                 </div>
-                <p className="text-gray-600 mb-4">
+                <p className="text-muted-foreground mb-4">
                   {hook.description}
                 </p>
-                <div className="flex items-center space-x-4 text-sm text-gray-500">
+                <div className="flex items-center space-x-4 text-sm text-muted-foreground">
                   <span className={`px-2 py-1 rounded-full text-xs font-medium ${
                     hook.difficulty === 'Beginner' 
                       ? 'bg-green-100 text-green-700' 
@@ -112,7 +112,7 @@ export default function HooksPage() {
                   <span>{hook.duration}</span>
                 </div>
               </div>
-              <ArrowRight className="h-5 w-5 text-gray-400 group-hover:text-blue-600 transition-colors" />
+              <ArrowRight className="h-5 w-5 text-muted-foreground group-hover:text-blue-600 transition-colors" />
             </div>
           </Link>
         ))}
