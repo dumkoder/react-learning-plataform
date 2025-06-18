@@ -351,7 +351,7 @@ function ShoppingCart() {
           <>
             {cart.map(item => (
               <div key={item.id} style={{ margin: '10px 0', padding: '10px', border: '1px solid #ccc' }}>
-                <span>{item.name} - ${item.price.toFixed(2)}</span>
+                <span>{item.name} - \${item.price.toFixed(2)}</span>
                 <div>
                   <button onClick={() => updateQuantity(item.id, item.quantity - 1)}>-</button>
                   <span style={{ margin: '0 10px' }}>Qty: {item.quantity}</span>
@@ -360,11 +360,11 @@ function ShoppingCart() {
                     Remove
                   </button>
                 </div>
-                <div>Subtotal: ${(item.price * item.quantity).toFixed(2)}</div>
+                <div>Subtotal: \${(item.price * item.quantity).toFixed(2)}</div>
               </div>
             ))}
             <div>
-              <strong>Total: ${getTotalPrice().toFixed(2)}</strong>
+              <strong>Total: \${getTotalPrice().toFixed(2)}</strong>
             </div>
             <button onClick={clearCart}>Clear Cart</button>
           </>

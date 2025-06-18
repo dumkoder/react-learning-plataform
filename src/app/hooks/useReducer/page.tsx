@@ -636,7 +636,7 @@ function ShoppingCart() {
           {sampleProducts.map(product => (
             <div key={product.id} style={{ border: '1px solid #ccc', padding: '1rem' }}>
               <h3>{product.name}</h3>
-              <p>${product.price}</p>
+              <p>{product.price}</p>
               <button onClick={() => addItem(product)}>
                 Add to Cart
               </button>
@@ -664,7 +664,7 @@ function ShoppingCart() {
               <div>
                 <strong>{item.name}</strong>
                 <br />
-                ${item.price} each
+                {item.price} each
               </div>
               
               <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
@@ -676,7 +676,7 @@ function ShoppingCart() {
                   +
                 </button>
                 <span style={{ marginLeft: '1rem' }}>
-                  ${(item.price * item.quantity).toFixed(2)}
+                  {(item.price * item.quantity).toFixed(2)}
                 </span>
                 <button onClick={() => removeItem(item.id)} style={{ marginLeft: '1rem' }}>
                   Remove
@@ -687,11 +687,11 @@ function ShoppingCart() {
 
           {/* Cart summary */}
           <div style={{ marginTop: '2rem', padding: '1rem', backgroundColor: '#f5f5f5' }}>
-            <div>Subtotal: ${subtotal.toFixed(2)}</div>
-            <div>Discount: -${state.discount.toFixed(2)}</div>
-            <div>Shipping: ${state.shipping.toFixed(2)}</div>
+            <div>Subtotal: {subtotal.toFixed(2)}</div>
+            <div>Discount: -{state.discount.toFixed(2)}</div>
+            <div>Shipping: {state.shipping.toFixed(2)}</div>
             <div style={{ fontSize: '1.2rem', fontWeight: 'bold' }}>
-              Total: ${total.toFixed(2)}
+              Total: {total.toFixed(2)}
             </div>
 
             <div style={{ marginTop: '1rem', display: 'flex', gap: '1rem' }}>
