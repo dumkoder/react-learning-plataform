@@ -1,0 +1,128 @@
+{
+  "navigation": {
+    "home": "Home",
+    "fundamentals": "Fundamentals",
+    "hooks": "Hooks",
+    "advanced": "Advanced",
+    "redux": "Redux",
+    "routing": "Routing",
+    "testing": "Testing",
+    "playground": "Playground",
+    "brand": "React Learning"
+  },
+  "home": {
+    "hero": {
+      "title": "Master React Development",
+      "description": "Complete React learning platform with interactive lessons, live coding exercises, and comprehensive coverage of all React concepts from fundamentals to advanced patterns.",
+      "startLearning": "Start Learning",
+      "tryPlayground": "Try Playground"
+    },
+    "features": [
+      {
+        "title": "Comprehensive Lessons",
+        "description": "Learn React from basics to advanced concepts with detailed explanations and examples."
+      },
+      {
+        "title": "Interactive Coding",
+        "description": "Practice React concepts with live coding exercises and instant feedback."
+      },
+      {
+        "title": "Hands-on Examples",
+        "description": "Explore real-world examples and patterns used in modern React applications."
+      },
+      {
+        "title": "Progressive Learning",
+        "description": "Follow a structured learning path from beginner to advanced React developer."
+      }
+    ],
+    "topicsTitle": "Topics Covered",
+    "topics": [
+      "React Component Definition",
+      "JSX",
+      "Component State & Lifecycle",
+      "Hooks",
+      "Component Composition",
+      "React DOM",
+      "Forms & Context",
+      "Performance Optimization",
+      "Code Reuse Patterns",
+      "Virtual DOM",
+      "Security & TypeChecking",
+      "Redux & State Management",
+      "Routing",
+      "Testing",
+      "Building & Deployment",
+      "Server-Side Rendering"
+    ]
+  },
+  "fundamentals": {
+    "title": "React Fundamentals",
+    "description": "Master the core concepts of React development with comprehensive lessons and examples.",
+    "nextSection": {
+      "title": "Ready for Advanced Topics?",
+      "description": "Once you've completed the fundamentals, explore advanced React concepts including Hooks, Context, and Performance optimization.",
+      "linkText": "Explore Hooks"
+    },
+    "lessons": [
+      {
+        "id": "components",
+        "title": "React Component Definition",
+        "description": "Learn how to create and structure React components",
+        "difficulty": "Beginner",
+        "duration": "15 min"
+      },
+      {
+        "id": "jsx",
+        "title": "JSX Syntax",
+        "description": "Master JSX syntax and understand how it works under the hood",
+        "difficulty": "Beginner",
+        "duration": "20 min"
+      },
+      {
+        "id": "state",
+        "title": "Component State",
+        "description": "Understand component state and how to manage it",
+        "difficulty": "Beginner",
+        "duration": "25 min"
+      },
+      {
+        "id": "lifecycle",
+        "title": "Component Lifecycle",
+        "description": "Learn about component lifecycle methods and their usage",
+        "difficulty": "Intermediate",
+        "duration": "30 min"
+      },
+      {
+        "id": "composition",
+        "title": "Component Composition",
+        "description": "Master component composition patterns and best practices",
+        "difficulty": "Intermediate",
+        "duration": "25 min"
+      },
+      {
+        "id": "react-dom",
+        "title": "React DOM",
+        "description": "Understand React DOM and rendering concepts",
+        "difficulty": "Beginner",
+        "duration": "20 min"
+      },
+      {
+        "id": "forms",
+        "title": "Forms and Events",
+        "description": "Handle forms and events in React applications",
+        "difficulty": "Intermediate",
+        "duration": "35 min"
+      }
+    ]
+  },
+  "common": {
+    "loading": "Loading...",
+    "error": "Error",
+    "preview": "Preview",
+    "copy": "Copy code",
+    "copied": "Copied!",
+    "beginner": "Beginner",
+    "intermediate": "Intermediate",
+    "advanced": "Advanced"
+  }
+}

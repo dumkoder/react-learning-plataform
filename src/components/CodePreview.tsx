@@ -2,6 +2,8 @@
 
 import { useEffect, useRef, useState } from 'react'
 import { AlertCircle } from 'lucide-react'
+import { useContent, getContent } from '@/hooks/useContent'
+import { transformCodeForPreview } from '@/lib/utils'
 
 interface CodePreviewProps {
   code: string
@@ -11,6 +13,7 @@ export function CodePreview({ code }: CodePreviewProps) {
   const iframeRef = useRef<HTMLIFrameElement>(null)
   const [error, setError] = useState<string | null>(null)
   const [isLoading, setIsLoading] = useState(true)
+  const { content } = useContent()
 
   useEffect(() => {
     if (!iframeRef.current) return
@@ -20,7 +23,7 @@ export function CodePreview({ code }: CodePreviewProps) {
 
     try {
       // Transform the code to make it work in the iframe
-      const transformedCode = transformCode(code)
+      const transformedCode = transformCodeForPreview(code)
       
       const html = `
         <!DOCTYPE html>
@@ -37,7 +40,8 @@ export function CodePreview({ code }: CodePreviewProps) {
                 margin: 0;
                 padding: 16px;
                 font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-                background: white;
+                background: #0a0a0a;
+                color: #ededed;
               }
               .error {
                 color: #dc3545;
@@ -119,46 +123,19 @@ export function CodePreview({ code }: CodePreviewProps) {
     return () => window.removeEventListener('message', handleMessage)
   }, [])
 
-  const transformCode = (code: string): string => {
-    // Remove import statements and replace with direct usage
-    let transformedCode = code
-      .replace(/import\s+React[^;]*;?\s*/g, '')
-      .replace(/import\s+\{[^}]*\}\s+from\s+['"]react['"];?\s*/g, '')
-      .replace(/import[^;]*;?\s*/g, '')
-    
-    // Replace React hooks with React.hookName
-    transformedCode = transformedCode
-      .replace(/\buseState\b/g, 'React.useState')
-      .replace(/\buseEffect\b/g, 'React.useEffect')
-      .replace(/\buseContext\b/g, 'React.useContext')
-      .replace(/\buseReducer\b/g, 'React.useReducer')
-      .replace(/\buseMemo\b/g, 'React.useMemo')
-      .replace(/\buseCallback\b/g, 'React.useCallback')
-      .replace(/\buseRef\b/g, 'React.useRef')
-    
-    // Ensure there's a default export
-    if (!transformedCode.includes('export default')) {
-      transformedCode = transformedCode.replace(/function\s+(\w+)/, 'function App')
-      transformedCode += '\n// Auto-generated export\nconst App = App || (() => <div>Component not found</div>);'
-    } else {
-      transformedCode = transformedCode.replace(/export\s+default\s+(\w+);?/, '')
-    }
-    
-    return transformedCode
-  }
 
   return (
     <div className="border border-border rounded-lg overflow-hidden bg-card">
       <div className="bg-muted px-4 py-2 border-b border-border">
         <div className="flex items-center justify-between">
-          <span className="text-sm font-medium text-foreground">Preview</span>
+          <span className="text-sm font-medium text-foreground">{getContent(content, 'common.preview', 'Preview')}</span>
           {isLoading && (
-            <span className="text-xs text-muted-foreground">Loading...</span>
+            <span className="text-xs text-muted-foreground">{getContent(content, 'common.loading', 'Loading...')}</span>
           )}
           {error && (
             <div className="flex items-center text-red-600">
               <AlertCircle className="h-4 w-4 mr-1" />
-              <span className="text-xs">Error</span>
+              <span className="text-xs">{getContent(content, 'common.error', 'Error')}</span>
             </div>
           )}
         </div>

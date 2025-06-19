@@ -4,21 +4,14 @@ import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import { BookOpen, Menu, X } from 'lucide-react'
 import { useState } from 'react'
-
-const navigationItems = [
-  { name: 'Home', href: '/' },
-  { name: 'Fundamentals', href: '/fundamentals' },
-  { name: 'Hooks', href: '/hooks' },
-  { name: 'Advanced', href: '/advanced' },
-  { name: 'Redux', href: '/redux' },
-  { name: 'Routing', href: '/routing' },
-  { name: 'Testing', href: '/testing' },
-  { name: 'Playground', href: '/playground' },
-]
+import { useContent, getContent } from '@/hooks/useContent'
+import { getNavigationItems } from '@/lib/utils'
 
 export function Navigation() {
   const pathname = usePathname()
   const [isOpen, setIsOpen] = useState(false)
+  const { content } = useContent()
+  const navigationItems = getNavigationItems()
 
   return (
     <nav className="bg-card shadow-lg border-b border-border">
@@ -26,7 +19,7 @@ export function Navigation() {
         <div className="flex justify-between items-center py-4">
           <Link href="/" className="flex items-center space-x-2">
             <BookOpen className="h-8 w-8 text-primary" />
-            <span className="text-xl font-bold text-foreground">React Learning</span>
+            <span className="text-xl font-bold text-foreground">{getContent(content, 'navigation.brand', 'React Learning')}</span>
           </Link>
 
           {/* Desktop Navigation */}
@@ -41,7 +34,7 @@ export function Navigation() {
                     : 'text-muted-foreground hover:text-primary hover:bg-accent/50'
                 }`}
               >
-                {item.name}
+                {getContent(content, `navigation.${item.name}`, item.name)}
               </Link>
             ))}
           </div>
@@ -69,7 +62,7 @@ export function Navigation() {
                 }`}
                 onClick={() => setIsOpen(false)}
               >
-                {item.name}
+                {getContent(content, `navigation.${item.name}`, item.name)}
               </Link>
             ))}
           </div>

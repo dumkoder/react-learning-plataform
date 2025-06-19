@@ -2,6 +2,7 @@
 
 import { useState } from 'react'
 import { Copy, Check } from 'lucide-react'
+import { useContent, getContent } from '@/hooks/useContent'
 
 interface CodeExampleProps {
   code: string
@@ -12,6 +13,7 @@ interface CodeExampleProps {
 
 export function CodeExample({ code, language = 'javascript', title, explanation }: CodeExampleProps) {
   const [copied, setCopied] = useState(false)
+  const { content } = useContent()
 
   const handleCopy = async () => {
     await navigator.clipboard.writeText(code)
@@ -37,7 +39,7 @@ export function CodeExample({ code, language = 'javascript', title, explanation 
         <button
           onClick={handleCopy}
           className="absolute top-2 right-2 p-2 bg-background hover:bg-accent rounded-md transition-colors border border-border"
-          title="Copy code"
+          title={getContent(content, 'common.copy', 'Copy code')}
         >
           {copied ? (
             <Check className="h-4 w-4 text-green-400" />

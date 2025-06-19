@@ -4,14 +4,19 @@ import { useRef } from 'react'
 import dynamic from 'next/dynamic'
 import type { Monaco } from '@monaco-editor/react'
 import type { editor } from 'monaco-editor'
+import { useContent, getContent } from '@/hooks/useContent'
 
 const MonacoEditor = dynamic(() => import('@monaco-editor/react'), {
   ssr: false,
-  loading: () => (
-    <div className="flex items-center justify-center h-96 bg-muted rounded-lg">
-      <div className="text-muted-foreground">Loading editor...</div>
-    </div>
-  ),
+  loading: () => {
+    // eslint-disable-next-line react-hooks/rules-of-hooks
+    const { content } = useContent();
+    return (
+      <div className="flex items-center justify-center h-96 bg-muted rounded-lg">
+        <div className="text-muted-foreground">{getContent(content, 'common.loading', 'Loading editor...')}</div>
+      </div>
+    );
+  },
 })
 
 interface CodeEditorProps {
