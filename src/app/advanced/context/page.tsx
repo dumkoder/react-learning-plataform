@@ -9,7 +9,7 @@ export default function ContextPage() {
           Context API
         </h1>
         <p className="text-xl text-muted-foreground">
-          Share data across components without prop drilling using React's Context API.
+          Share data across components without prop drilling using React&apos;s Context API.
         </p>
       </div>
 
@@ -17,8 +17,8 @@ export default function ContextPage() {
         <h2 className="text-lg font-semibold text-card-foreground mb-3">What is Context API?</h2>
         <p className="text-muted-foreground mb-4">
           The Context API is a React feature that allows you to share state between components without 
-          having to pass props down through every level of the component tree. It's designed to share 
-          data that can be considered "global" for a tree of React components.
+          having to pass props down through every level of the component tree. It&apos;s designed to share 
+          data that can be considered &quot;global&quot; for a tree of React components.
         </p>
         <div className="bg-muted p-4 rounded-lg">
           <h3 className="font-semibold text-foreground mb-2">When to use Context:</h3>
@@ -119,7 +119,7 @@ function Header() {
               </ul>
             </div>
             <div>
-              <h3 className="font-semibold text-foreground mb-2">❌ Don't:</h3>
+              <h3 className="font-semibold text-foreground mb-2">❌ Don&apos;t:</h3>
               <ul className="list-disc list-inside text-muted-foreground space-y-1">
                 <li>Use context for frequently changing data</li>
                 <li>Put everything in a single context</li>

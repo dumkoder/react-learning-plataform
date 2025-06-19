@@ -295,7 +295,7 @@ function UserProfile({ userId }: { userId: number }) {
         <section className="bg-card border border-border rounded-lg p-6">
           <h2 className="text-2xl font-semibold text-card-foreground mb-4">PropTypes for JavaScript</h2>
           <p className="text-muted-foreground mb-4">
-            If you're not using TypeScript, PropTypes provide runtime type checking:
+            If you&apos;re not using TypeScript, PropTypes provide runtime type checking:
           </p>
           <pre className="bg-muted p-4 rounded-lg overflow-x-auto">
             <code className="text-sm text-foreground">

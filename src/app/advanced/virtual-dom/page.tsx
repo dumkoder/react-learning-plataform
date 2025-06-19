@@ -9,7 +9,7 @@ export default function VirtualDomPage() {
           Virtual DOM
         </h1>
         <p className="text-xl text-muted-foreground">
-          Understand how React's Virtual DOM works, the reconciliation process, and performance implications.
+          Understand how React&apos;s Virtual DOM works, the reconciliation process, and performance implications.
         </p>
       </div>
 
@@ -17,8 +17,8 @@ export default function VirtualDomPage() {
         <h2 className="text-lg font-semibold text-card-foreground mb-3">What is the Virtual DOM?</h2>
         <p className="text-muted-foreground mb-4">
           The Virtual DOM is a JavaScript representation of the actual DOM (Document Object Model). 
-          It's a programming concept where a virtual representation of the UI is kept in memory and 
-          synced with the "real" DOM through a process called reconciliation.
+          It&apos;s a programming concept where a virtual representation of the UI is kept in memory and 
+          synced with the &quot;real&quot; DOM through a process called reconciliation.
         </p>
         <div className="grid md:grid-cols-3 gap-4 text-sm">
           <div className="bg-muted p-3 rounded">
@@ -96,7 +96,7 @@ export default function VirtualDomPage() {
         <section className="bg-card border border-border rounded-lg p-6">
           <h2 className="text-2xl font-semibold text-card-foreground mb-4">Reconciliation Algorithm</h2>
           <p className="text-muted-foreground mb-4">
-            React's diffing algorithm makes certain assumptions to optimize performance:
+            React&apos;s diffing algorithm makes certain assumptions to optimize performance:
           </p>
           <pre className="bg-muted p-4 rounded-lg overflow-x-auto">
             <code className="text-sm text-foreground">
@@ -182,7 +182,7 @@ const updatedList = [
         <section className="bg-card border border-border rounded-lg p-6">
           <h2 className="text-2xl font-semibold text-card-foreground mb-4">React Fiber</h2>
           <p className="text-muted-foreground mb-4">
-            React Fiber is the reimplementation of React's reconciliation algorithm, introduced in React 16:
+            React Fiber is the reimplementation of React&apos;s reconciliation algorithm, introduced in React 16:
           </p>
           <div className="grid md:grid-cols-2 gap-6">
             <div>
@@ -271,21 +271,21 @@ function GoodComponent({ items }) {
           <h2 className="text-2xl font-semibold text-card-foreground mb-4">Common Misconceptions</h2>
           <div className="space-y-4">
             <div className="bg-muted p-4 rounded">
-              <h3 className="font-semibold text-foreground mb-2">❌ "Virtual DOM is always faster than direct DOM manipulation"</h3>
+              <h3 className="font-semibold text-foreground mb-2">❌ &quot;Virtual DOM is always faster than direct DOM manipulation&quot;</h3>
               <p className="text-muted-foreground">
                 Virtual DOM adds overhead. For simple operations, direct DOM manipulation can be faster. 
-                Virtual DOM's benefit is in complex UIs with many updates.
+                Virtual DOM&apos;s benefit is in complex UIs with many updates.
               </p>
             </div>
             <div className="bg-muted p-4 rounded">
-              <h3 className="font-semibold text-foreground mb-2">❌ "Virtual DOM prevents all unnecessary re-renders"</h3>
+              <h3 className="font-semibold text-foreground mb-2">❌ &quot;Virtual DOM prevents all unnecessary re-renders&quot;</h3>
               <p className="text-muted-foreground">
                 Virtual DOM minimizes DOM updates, but React components can still re-render unnecessarily. 
                 You need additional optimization techniques like memo, useMemo, and useCallback.
               </p>
             </div>
             <div className="bg-muted p-4 rounded">
-              <h3 className="font-semibold text-foreground mb-2">❌ "Virtual DOM is unique to React"</h3>
+              <h3 className="font-semibold text-foreground mb-2">❌ &quot;Virtual DOM is unique to React&quot;</h3>
               <p className="text-muted-foreground">
                 Other frameworks like Vue.js also use Virtual DOM concepts. The implementation details 
                 and optimization strategies may differ.
