@@ -30,7 +30,7 @@ export default function ReactDOMPage() {
           <h2 className="text-2xl font-semibold text-foreground mb-4">What is React DOM?</h2>
           <p className="text-muted-foreground mb-6">
             React DOM is the package that provides DOM-specific methods for React. It serves as the bridge between 
-            React components and the browser's DOM. React DOM handles rendering React elements to the DOM and 
+            React components and the browser&apos;s DOM. React DOM handles rendering React elements to the DOM and 
             managing updates efficiently through its reconciliation process.
           </p>
           
@@ -48,7 +48,7 @@ export default function ReactDOMPage() {
         <section className="mb-12">
           <h2 className="text-2xl font-semibold text-foreground mb-4">Rendering to the DOM</h2>
           <p className="text-muted-foreground mb-6">
-            Here's how to render React components to the DOM:
+            Here&apos;s how to render React components to the DOM:
           </p>
           
           <CodeExample
@@ -565,20 +565,20 @@ function WindowEventsExample() {
             <div className="bg-green-50 border border-green-200 rounded-lg p-4">
               <h3 className="text-lg font-medium text-green-900 mb-2">✅ Do</h3>
               <ul className="text-green-800 text-sm space-y-1">
-                <li>Use React 18's createRoot for new applications</li>
+                <li>Use React 18&apos;s createRoot for new applications</li>
                 <li>Use refs sparingly and only when necessary</li>
                 <li>Clean up event listeners and subscriptions</li>
                 <li>Use portals for modals and overlays</li>
-                <li>Trust React's reconciliation process</li>
+                <li>Trust React&apos;s reconciliation process</li>
               </ul>
             </div>
             
             <div className="bg-red-50 border border-red-200 rounded-lg p-4">
-              <h3 className="text-lg font-medium text-red-900 mb-2">❌ Don't</h3>
+              <h3 className="text-lg font-medium text-red-900 mb-2">❌ Don&apos;t</h3>
               <ul className="text-red-800 text-sm space-y-1">
                 <li>Manipulate DOM directly when React can handle it</li>
                 <li>Use findDOMNode (deprecated)</li>
-                <li>Access DOM elements before they're mounted</li>
+                <li>Access DOM elements before they&apos;re mounted</li>
                 <li>Forget to clean up refs and event listeners</li>
                 <li>Mix jQuery or other DOM libraries carelessly</li>
               </ul>

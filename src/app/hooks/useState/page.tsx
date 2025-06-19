@@ -20,7 +20,7 @@ export default function UseStatePage() {
           useState Hook
         </h1>
         <p className="text-xl text-muted-foreground">
-          Learn how to manage component state using React's useState hook for reactive user interfaces.
+          Learn how to manage component state using React&apos;s useState hook for reactive user interfaces.
         </p>
       </div>
 
@@ -48,7 +48,7 @@ export default function UseStatePage() {
         <section className="mb-12">
           <h2 className="text-2xl font-semibold text-foreground mb-4">Basic Usage</h2>
           <p className="text-muted-foreground mb-6">
-            Here's how to use useState in its simplest form:
+            Here&apos;s how to use useState in its simplest form:
           </p>
           
           <CodeExample
@@ -553,7 +553,7 @@ function GameBoard() {
             </div>
             
             <div className="bg-red-50 border border-red-200 rounded-lg p-4">
-              <h3 className="text-lg font-medium text-red-900 mb-2">❌ Don't</h3>
+              <h3 className="text-lg font-medium text-red-900 mb-2">❌ Don&apos;t</h3>
               <ul className="text-red-800 text-sm space-y-1">
                 <li>Mutate state directly</li>
                 <li>Store props in state unless necessary</li>

@@ -48,7 +48,7 @@ export default function UseContextPage() {
         <section className="mb-12">
           <h2 className="text-2xl font-semibold text-foreground mb-4">Basic Context Setup</h2>
           <p className="text-muted-foreground mb-6">
-            First, let's create a context and see how to consume it with useContext:
+            First, let&apos;s create a context and see how to consume it with useContext:
           </p>
           
           <CodeExample
@@ -774,7 +774,7 @@ function App() {
             </div>
             
             <div className="bg-red-50 border border-red-200 rounded-lg p-4">
-              <h3 className="text-lg font-medium text-red-900 mb-2">❌ Don't</h3>
+              <h3 className="text-lg font-medium text-red-900 mb-2">❌ Don&apos;t</h3>
               <ul className="text-red-800 text-sm space-y-1">
                 <li>Use context for frequently changing values</li>
                 <li>Create one giant context for everything</li>

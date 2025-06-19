@@ -36,7 +36,7 @@ export default function JSXPage() {
           <div className="bg-blue-50 border border-blue-200 rounded-lg p-6 mb-6">
             <h3 className="text-lg font-medium text-blue-900 mb-2">Key Points</h3>
             <ul className="list-disc list-inside text-blue-800 space-y-1">
-              <li>JSX is not HTML - it's JavaScript that looks like HTML</li>
+              <li>JSX is not HTML - it&apos;s JavaScript that looks like HTML</li>
               <li>JSX gets compiled to React.createElement() calls</li>
               <li>JSX expressions must have one parent element</li>
               <li>JSX uses camelCase for HTML attributes</li>
@@ -184,7 +184,7 @@ function MyComponent() {
         <section className="mb-12">
           <h2 className="text-2xl font-semibold text-gray-900 mb-4">Rendering Lists</h2>
           <p className="text-gray-700 mb-6">
-            Use JavaScript's map function to render lists of elements:
+            Use JavaScript&apos;s map function to render lists of elements:
           </p>
           
           <CodeExample

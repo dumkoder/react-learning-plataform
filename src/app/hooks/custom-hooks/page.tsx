@@ -29,7 +29,7 @@ export default function CustomHooksPage() {
         <section className="mb-12">
           <h2 className="text-2xl font-semibold text-foreground mb-4">What are Custom Hooks?</h2>
           <p className="text-muted-foreground mb-6">
-            Custom hooks are JavaScript functions that start with "use" and can call other hooks. They allow you to 
+            Custom hooks are JavaScript functions that start with &quot;use&quot; and can call other hooks. They allow you to 
             extract component logic into reusable functions, sharing stateful logic between multiple components.
           </p>
           
@@ -48,7 +48,7 @@ export default function CustomHooksPage() {
         <section className="mb-12">
           <h2 className="text-2xl font-semibold text-foreground mb-4">Basic Custom Hook</h2>
           <p className="text-muted-foreground mb-6">
-            Let's start with a simple custom hook for managing a counter:
+            Let&apos;s start with a simple custom hook for managing a counter:
           </p>
           
           <CodeExample
@@ -1366,7 +1366,7 @@ export default ApiDataDemo;`}
             <div className="bg-green-50 border border-green-200 rounded-lg p-4">
               <h3 className="text-lg font-medium text-green-900 mb-2">✅ Do</h3>
               <ul className="text-green-800 text-sm space-y-1">
-                <li>Start function names with "use"</li>
+                <li>Start function names with &quot;use&quot;</li>
                 <li>Use useCallback for returned functions</li>
                 <li>Provide clear and consistent APIs</li>
                 <li>Include proper error handling</li>
@@ -1377,13 +1377,13 @@ export default ApiDataDemo;`}
             </div>
             
             <div className="bg-red-50 border border-red-200 rounded-lg p-4">
-              <h3 className="text-lg font-medium text-red-900 mb-2">❌ Don't</h3>
+              <h3 className="text-lg font-medium text-red-900 mb-2">❌ Don&apos;t</h3>
               <ul className="text-red-800 text-sm space-y-1">
                 <li>Call hooks conditionally or in loops</li>
                 <li>Create overly complex hooks</li>
                 <li>Ignore dependency arrays in useEffect/useCallback</li>
                 <li>Return mutable objects without memoization</li>
-                <li>Create hooks that break React's rules</li>
+                <li>Create hooks that break React&apos;s rules</li>
                 <li>Mix too many concerns in one hook</li>
                 <li>Forget to handle cleanup in useEffect</li>
               </ul>

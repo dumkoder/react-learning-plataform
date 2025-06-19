@@ -40,7 +40,7 @@ export default function CompositionPage() {
               <li>Promotes code reusability and modularity</li>
               <li>Makes components easier to test and maintain</li>
               <li>Enables flexible UI layouts and structures</li>
-              <li>Follows the principle of "composition over inheritance"</li>
+              <li>Follows the principle of &quot;composition over inheritance&quot;</li>
             </ul>
           </div>
         </section>
@@ -441,7 +441,7 @@ export default Tabs;`}
             </div>
             
             <div className="bg-red-50 border border-red-200 rounded-lg p-4">
-              <h3 className="text-lg font-medium text-red-900 mb-2">❌ Don't</h3>
+              <h3 className="text-lg font-medium text-red-900 mb-2">❌ Don&apos;t</h3>
               <ul className="text-red-800 text-sm space-y-1">
                 <li>Create overly complex component hierarchies</li>
                 <li>Pass too many props through multiple levels</li>

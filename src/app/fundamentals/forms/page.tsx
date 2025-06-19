@@ -30,7 +30,7 @@ export default function FormsPage() {
           <h2 className="text-2xl font-semibold text-foreground mb-4">Controlled vs Uncontrolled Components</h2>
           <p className="text-muted-foreground mb-6">
             In React, form inputs can be either controlled (managed by React state) or uncontrolled (managed by the DOM). 
-            Controlled components are the recommended approach as they provide better control and integration with React's data flow.
+            Controlled components are the recommended approach as they provide better control and integration with React&apos;s data flow.
           </p>
           
           <div className="bg-blue-50 border border-blue-200 rounded-lg p-6 mb-6">
@@ -969,7 +969,7 @@ export default FileUpload;`}
             </div>
             
             <div className="bg-red-50 border border-red-200 rounded-lg p-4">
-              <h3 className="text-lg font-medium text-red-900 mb-2">❌ Don't</h3>
+              <h3 className="text-lg font-medium text-red-900 mb-2">❌ Don&apos;t</h3>
               <ul className="text-red-800 text-sm space-y-1">
                 <li>Mix controlled and uncontrolled inputs</li>
                 <li>Validate every keystroke aggressively</li>

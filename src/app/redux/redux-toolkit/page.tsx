@@ -669,7 +669,7 @@ function PostsList() {
               <ul className="text-green-800 text-sm space-y-1">
                 <li>Use createSlice for all reducers</li>
                 <li>Use createAsyncThunk for async logic</li>
-                <li>Write "mutative" logic in reducers (Immer handles immutability)</li>
+                <li>Write &quot;mutative&quot; logic in reducers (Immer handles immutability)</li>
                 <li>Use RTK Query for data fetching</li>
                 <li>Keep slices focused on single domains</li>
                 <li>Use prepare callbacks for complex action payloads</li>
@@ -678,7 +678,7 @@ function PostsList() {
             </div>
             
             <div className="bg-red-50 border border-red-200 rounded-lg p-4">
-              <h3 className="text-lg font-medium text-red-900 mb-2">❌ Don't</h3>
+              <h3 className="text-lg font-medium text-red-900 mb-2">❌ Don&apos;t</h3>
               <ul className="text-red-800 text-sm space-y-1">
                 <li>Mix RTK with legacy Redux patterns</li>
                 <li>Put non-serializable data in state</li>

@@ -31,7 +31,7 @@ export default function ReduxIntroductionPage() {
           <p className="text-muted-foreground mb-6">
             Redux is a predictable state container for JavaScript applications. It helps you write applications that 
             behave consistently, run in different environments, and are easy to test. Redux centralizes your 
-            application's state and logic.
+            application&apos;s state and logic.
           </p>
           
           <div className="bg-indigo-50 border border-indigo-200 rounded-lg p-6 mb-6">
@@ -228,7 +228,7 @@ function TodoList() {
         <section className="mb-12">
           <h2 className="text-2xl font-semibold text-foreground mb-4">When to Use Redux</h2>
           <p className="text-muted-foreground mb-6">
-            Redux isn't always necessary. Here's when you should consider using it:
+            Redux isn&apos;t always necessary. Here&apos;s when you should consider using it:
           </p>
           
           <div className="grid md:grid-cols-2 gap-6 mb-6">
@@ -250,7 +250,7 @@ function TodoList() {
                 <li><strong>Simple app:</strong> Few components with local state</li>
                 <li><strong>Learning React:</strong> Focus on React fundamentals first</li>
                 <li><strong>Static data:</strong> Data rarely changes</li>
-                <li><strong>Small team:</strong> Overhead isn't worth the benefits</li>
+                <li><strong>Small team:</strong> Overhead isn&apos;t worth the benefits</li>
                 <li><strong>Quick prototype:</strong> Speed is more important than structure</li>
                 <li><strong>Alternative solutions:</strong> Context API or useState might suffice</li>
               </ul>
@@ -340,7 +340,7 @@ const useTodoStore = create((set) => ({
               <div>
                 <h4 className="font-medium mb-2">Rules:</h4>
                 <ul className="space-y-1 text-sm">
-                  <li>You can't change balance directly</li>
+                  <li>You can&apos;t change balance directly</li>
                   <li>Must fill out a transaction slip (action)</li>
                   <li>Teller processes it following rules (reducer)</li>
                   <li>New balance is calculated (new state)</li>
@@ -444,7 +444,7 @@ console.log(store.getState().balance); // $120`}
                 </ul>
               </div>
               <div>
-                <h4 className="font-medium text-blue-800 mb-2">📚 What you'll learn next:</h4>
+                <h4 className="font-medium text-blue-800 mb-2">📚 What you&apos;ll learn next:</h4>
                 <ul className="text-blue-700 text-sm space-y-1">
                   <li>Creating stores, actions, and reducers</li>
                   <li>Connecting Redux to React components</li>

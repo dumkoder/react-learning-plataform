@@ -48,7 +48,7 @@ export default function UseCallbackPage() {
         <section className="mb-12">
           <h2 className="text-2xl font-semibold text-foreground mb-4">Basic useCallback Usage</h2>
           <p className="text-muted-foreground mb-6">
-            Here's a simple example showing how useCallback prevents unnecessary re-renders:
+            Here&apos;s a simple example showing how useCallback prevents unnecessary re-renders:
           </p>
           
           <CodeExample
@@ -951,9 +951,9 @@ export default App;`}
             </div>
             
             <div className="bg-red-50 border border-red-200 rounded-lg p-4">
-              <h3 className="text-lg font-medium text-red-900 mb-2">❌ Don't</h3>
+              <h3 className="text-lg font-medium text-red-900 mb-2">❌ Don&apos;t</h3>
               <ul className="text-red-800 text-sm space-y-1">
-                <li>Overuse it for functions that don't need optimization</li>
+                <li>Overuse it for functions that don&apos;t need optimization</li>
                 <li>Use for functions that are only called locally</li>
                 <li>Forget dependencies in the dependency array</li>
                 <li>Use as a replacement for proper component design</li>

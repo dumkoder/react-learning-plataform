@@ -105,7 +105,7 @@ export default function FundamentalsPage() {
           Ready for Advanced Topics?
         </h3>
         <p className="text-blue-700 mb-4">
-          Once you've completed the fundamentals, explore advanced React concepts including Hooks, Context, and Performance optimization.
+          Once you&apos;ve completed the fundamentals, explore advanced React concepts including Hooks, Context, and Performance optimization.
         </p>
         <Link 
           href="/hooks"

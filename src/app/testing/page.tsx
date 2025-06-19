@@ -125,7 +125,7 @@ describe('Button Component', () => {
               </ul>
             </div>
             <div className="bg-red-50 p-4 rounded-lg">
-              <h4 className="font-medium text-red-900 mb-2">❌ Don't</h4>
+              <h4 className="font-medium text-red-900 mb-2">❌ Don&apos;t</h4>
               <ul className="text-red-800 text-sm space-y-1">
                 <li>Test implementation details</li>
                 <li>Write overly complex test setups</li>
@@ -140,7 +140,7 @@ describe('Button Component', () => {
         <section className="bg-white p-6 rounded-lg shadow-md border border-gray-200">
           <h3 className="text-xl font-semibold text-gray-900 mb-4">Building & Deployment</h3>
           <p className="text-gray-700 mb-4">
-            After testing, you'll want to build and deploy your React application:
+            After testing, you&apos;ll want to build and deploy your React application:
           </p>
           <div className="space-y-4">
             <div className="bg-gray-50 p-4 rounded-lg">

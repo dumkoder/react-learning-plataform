@@ -30,7 +30,7 @@ export default function UseReducerPage() {
           <h2 className="text-2xl font-semibold text-foreground mb-4">What is useReducer?</h2>
           <p className="text-muted-foreground mb-6">
             useReducer is a React Hook that provides an alternative to useState for managing complex state logic. 
-            It's especially useful when you have complex state updates, multiple sub-values, or when the next state depends on the previous one.
+            It&apos;s especially useful when you have complex state updates, multiple sub-values, or when the next state depends on the previous one.
           </p>
           
           <div className="bg-blue-50 border border-blue-200 rounded-lg p-6 mb-6">
@@ -769,7 +769,7 @@ function ShoppingCart() {
             </div>
             
             <div className="bg-red-50 border border-red-200 rounded-lg p-4">
-              <h3 className="text-lg font-medium text-red-900 mb-2">❌ Don't</h3>
+              <h3 className="text-lg font-medium text-red-900 mb-2">❌ Don&apos;t</h3>
               <ul className="text-red-800 text-sm space-y-1">
                 <li>Mutate state directly in reducers</li>
                 <li>Perform side effects in reducers</li>

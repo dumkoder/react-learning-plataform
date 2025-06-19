@@ -68,14 +68,14 @@ export default function HooksPage() {
       <div className="bg-blue-50 border border-blue-200 rounded-lg p-6 mb-8">
         <h2 className="text-lg font-semibold text-blue-900 mb-2">What are React Hooks?</h2>
         <p className="text-blue-800 mb-4">
-          Hooks are functions that let you "hook into" React state and lifecycle features from function components. 
+          Hooks are functions that let you &quot;hook into&quot; React state and lifecycle features from function components. 
           They were introduced in React 16.8 and allow you to use state and other React features without writing a class.
         </p>
         <div className="text-sm text-blue-700">
           <strong>Rules of Hooks:</strong>
           <ul className="list-disc list-inside mt-2 space-y-1">
             <li>Only call hooks at the top level of your React functions</li>
-            <li>Don't call hooks inside loops, conditions, or nested functions</li>
+            <li>Don&apos;t call hooks inside loops, conditions, or nested functions</li>
             <li>Only call hooks from React function components or custom hooks</li>
           </ul>
         </div>

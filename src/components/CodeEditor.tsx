@@ -2,6 +2,8 @@
 
 import { useRef } from 'react'
 import dynamic from 'next/dynamic'
+import type { Monaco } from '@monaco-editor/react'
+import type { editor } from 'monaco-editor'
 
 const MonacoEditor = dynamic(() => import('@monaco-editor/react'), {
   ssr: false,
@@ -25,9 +27,9 @@ export function CodeEditor({
   language = 'javascript',
   height = '400px' 
 }: CodeEditorProps) {
-  const editorRef = useRef<any>(null)
+  const editorRef = useRef<editor.IStandaloneCodeEditor | null>(null)
 
-  const handleEditorDidMount = (editor: any, monaco: any) => {
+  const handleEditorDidMount = (editor: editor.IStandaloneCodeEditor, monaco: Monaco) => {
     editorRef.current = editor
 
     // Configure TypeScript/JavaScript settings

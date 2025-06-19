@@ -59,7 +59,7 @@ export default function AdvancedPage() {
       <div className="bg-purple-50 border border-purple-200 rounded-lg p-6 mb-8">
         <h2 className="text-lg font-semibold text-purple-900 mb-2">Prerequisites</h2>
         <p className="text-purple-800 mb-4">
-          Before diving into advanced topics, make sure you're comfortable with:
+          Before diving into advanced topics, make sure you&apos;re comfortable with:
         </p>
         <div className="grid md:grid-cols-2 gap-4 text-sm text-purple-700">
           <ul className="list-disc list-inside space-y-1">

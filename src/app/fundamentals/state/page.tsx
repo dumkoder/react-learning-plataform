@@ -218,7 +218,7 @@ function Counter() {
             </div>
             
             <div className="bg-red-50 border border-red-200 rounded-lg p-4">
-              <h3 className="text-lg font-medium text-red-900 mb-2">❌ Don't</h3>
+              <h3 className="text-lg font-medium text-red-900 mb-2">❌ Don&apos;t</h3>
               <ul className="text-red-800 text-sm space-y-1">
                 <li>Mutate state directly</li>
                 <li>Store props in state unless necessary</li>
@@ -233,7 +233,7 @@ function Counter() {
         <section className="mb-12">
           <h2 className="text-2xl font-semibold text-foreground mb-4">Complete Example</h2>
           <p className="text-muted-foreground mb-6">
-            Here's a complete example of a todo app demonstrating various state management patterns:
+            Here&apos;s a complete example of a todo app demonstrating various state management patterns:
           </p>
           
           <CodeExample
