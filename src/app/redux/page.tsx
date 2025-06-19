@@ -56,28 +56,28 @@ export default function ReduxPage() {
   return (
     <div className="max-w-4xl mx-auto">
       <div className="mb-8">
-        <h1 className="text-4xl font-bold text-gray-900 mb-4">
+        <h1 className="text-4xl font-bold text-foreground mb-4">
           Redux & State Management
         </h1>
-        <p className="text-xl text-gray-600">
+        <p className="text-xl text-muted-foreground">
           Master Redux for predictable state management in complex React applications.
         </p>
       </div>
 
-      <div className="bg-indigo-50 border border-indigo-200 rounded-lg p-6 mb-8">
-        <h2 className="text-lg font-semibold text-indigo-900 mb-2">What is Redux?</h2>
-        <p className="text-indigo-800 mb-4">
+      <div className="bg-card border border-border rounded-lg p-6 mb-8">
+        <h2 className="text-lg font-semibold text-card-foreground mb-2">What is Redux?</h2>
+        <p className="text-muted-foreground mb-4">
           Redux is a predictable state container for JavaScript apps. It helps you manage application state 
           in a consistent way across client, server, and native environments.
         </p>
-        <div className="grid md:grid-cols-3 gap-4 text-sm text-indigo-700">
-          <div className="bg-white p-3 rounded border border-indigo-200">
+        <div className="grid md:grid-cols-3 gap-4 text-sm text-foreground">
+          <div className="bg-muted p-3 rounded border border-border">
             <strong>Predictable:</strong> Same state + same action = same result
           </div>
-          <div className="bg-white p-3 rounded border border-indigo-200">
+          <div className="bg-muted p-3 rounded border border-border">
             <strong>Centralized:</strong> All state in a single store
           </div>
-          <div className="bg-white p-3 rounded border border-indigo-200">
+          <div className="bg-muted p-3 rounded border border-border">
             <strong>Debuggable:</strong> Time-travel debugging with DevTools
           </div>
         </div>
@@ -90,20 +90,20 @@ export default function ReduxPage() {
             <Link
               key={topic.id}
               href={`/redux/${topic.id}`}
-              className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-all border border-gray-200 group"
+              className="bg-card p-6 rounded-lg shadow-md hover:shadow-lg transition-all border border-border group"
             >
               <div className="flex items-start justify-between">
                 <div className="flex-1">
                   <div className="flex items-center mb-2">
-                    <IconComponent className="h-5 w-5 text-indigo-600 mr-2" />
-                    <h2 className="text-xl font-semibold text-gray-900 group-hover:text-indigo-600 transition-colors">
+                    <IconComponent className="h-5 w-5 text-primary mr-2" />
+                    <h2 className="text-xl font-semibold text-card-foreground group-hover:text-primary transition-colors">
                       {topic.title}
                     </h2>
                   </div>
-                  <p className="text-gray-600 mb-4">
+                  <p className="text-muted-foreground mb-4">
                     {topic.description}
                   </p>
-                  <div className="flex items-center space-x-4 text-sm text-gray-500">
+                  <div className="flex items-center space-x-4 text-sm text-muted-foreground">
                     <span className={`px-2 py-1 rounded-full text-xs font-medium ${
                       topic.difficulty === 'Intermediate'
                         ? 'bg-yellow-100 text-yellow-700'
@@ -114,21 +114,21 @@ export default function ReduxPage() {
                     <span>{topic.duration}</span>
                   </div>
                 </div>
-                <ArrowRight className="h-5 w-5 text-gray-400 group-hover:text-indigo-600 transition-colors" />
+                <ArrowRight className="h-5 w-5 text-muted-foreground group-hover:text-primary transition-colors" />
               </div>
             </Link>
           );
         })}
       </div>
 
-      <div className="mt-12 bg-amber-50 border border-amber-200 rounded-lg p-6">
-        <h3 className="text-lg font-semibold text-amber-900 mb-2">
+      <div className="mt-12 bg-card border border-border rounded-lg p-6">
+        <h3 className="text-lg font-semibold text-card-foreground mb-2">
           When to Use Redux
         </h3>
         <div className="grid md:grid-cols-2 gap-6 text-sm">
           <div>
-            <h4 className="font-medium text-amber-800 mb-2">✅ Good Use Cases:</h4>
-            <ul className="list-disc list-inside text-amber-700 space-y-1">
+            <h4 className="font-medium text-foreground mb-2">✅ Good Use Cases:</h4>
+            <ul className="list-disc list-inside text-muted-foreground space-y-1">
               <li>Large applications with complex state</li>
               <li>State shared across many components</li>
               <li>Frequent state updates</li>
@@ -137,8 +137,8 @@ export default function ReduxPage() {
             </ul>
           </div>
           <div>
-            <h4 className="font-medium text-amber-800 mb-2">❌ Might Be Overkill:</h4>
-            <ul className="list-disc list-inside text-amber-700 space-y-1">
+            <h4 className="font-medium text-foreground mb-2">❌ Might Be Overkill:</h4>
+            <ul className="list-disc list-inside text-muted-foreground space-y-1">
               <li>Simple applications</li>
               <li>Local component state only</li>
               <li>Few state updates</li>
@@ -149,10 +149,10 @@ export default function ReduxPage() {
         </div>
       </div>
 
-      <div className="flex justify-between items-center pt-8 border-t border-gray-200 mt-8">
+      <div className="flex justify-between items-center pt-8 border-t border-border mt-8">
         <Link 
           href="/advanced"
-          className="flex items-center text-indigo-600 hover:text-indigo-700"
+          className="flex items-center text-primary hover:text-primary/80"
         >
           <ArrowLeft className="h-4 w-4 mr-1" />
           Back to Advanced Topics
@@ -160,7 +160,7 @@ export default function ReduxPage() {
         
         <Link 
           href="/routing"
-          className="flex items-center text-indigo-600 hover:text-indigo-700"
+          className="flex items-center text-primary hover:text-primary/80"
         >
           Next: Routing
           <ArrowRight className="h-4 w-4 ml-1" />
